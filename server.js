@@ -27,39 +27,37 @@ function createtemplate(data) {
     var content=data.content;
     var htmltemplate= `
     <html>
-    <head>
-        <title>
-            ${title}
-        </title>
-        <meta name="viewport" content="width=device-width , initial-scale=1"/>
-        <link href="/ui/style.css" rel="stylesheet" />
-    </head>
-   
-    <body>
-        <div class="container">
-            <div>
-                
-                <a href="/">
-                  home
-                </a>
+        <head>
+            <title>
+                ${title}
+            </title>
+            <meta name="viewport" content="width=device-width , initial-scale=1"/>
+            <link href="/ui/style.css" rel="stylesheet" />
+        </head>
+       
+        <body>
+            <div class="container">
+                <div>
+                    
+                    <a href="/">
+                      home
+                    </a>
+                </div>
+                <div>
+                    <h3>
+                       ${heading}
+                    </h3>
+                </div>
+                <div>
+                    ${date}
+                </div>
+                <div>
+                   ${content}
+                </div>
             </div>
-            <div>
-                <h3>
-                   ${heading}
-                </h3>
-            </div>
-            <div>
-                ${date}
-            </div>
-            <div>
-               ${content}
-            </div>
-        </div>
-    </body>
-</html>`;
-
-
-    
+        </body>
+    </html>`;
+    return htmltemplate;
 }
 
 app.get('/', function (req, res) {
