@@ -25,5 +25,7 @@ body {
                 max-width: 800px;
                 color: red;
                 margin: 0 auto;
-                font-family:  calibri
+                font-family:  calibri;
+                padding-left: 20px;
+                padding-right: 20px;
             }
