@@ -80,6 +80,12 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+var counter=0;
+app.get('/counter',function(req,res){
+    count=count + 1;
+    res.send(counter.toString());
+});
+
 app.get('/:articlename', function (req, res)
 {
     var articlename=req.params.articlename;
