@@ -55,7 +55,6 @@ function createtemplate(data) {
         <body>
             <div class="container">
                 <div>
-                    
                     <a href="/">
                       home
                     </a>
