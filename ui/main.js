@@ -48,8 +48,7 @@ submit.onclick = function(){
     //make a request
     var nameInput = document.getElementById('name');
     var name = nameInput.value;
-    request.open('GET', 'http://psanjuupadhyaya.imad.hasura-app.io/submit_name?name=',true);
+    request.open('GET', 'http://psanjuupadhyaya.imad.hasura-app.io/submit_name?name=' + name,true);
     request.send(null);
     
-   
 };
