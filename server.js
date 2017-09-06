@@ -88,8 +88,8 @@ app.get('/counter', function(req, res) {
 });
 
 var names=[];
-app.get('/submit_name/:name', function(req, res){
-    var name= req.params.name;
+app.get('/submit_name', function(req, res){//URL: submit_name?name=xxxxx
+    var name= req.query.name;
     names.push(name);
     res.send(JSON.stringify(names));
 });
